@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Buku</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="buku.js" defer></script>
+</head>
+<body>
+    <h1>Perpustakaan </h1>
+    <form id="addBukuForm">
+        <h2>Tambah Buku</h2>
+        <label for="kode_buku">Kode Buku:</label>
+        <input type="text" id="kode_buku" name="kode_buku" required><br>
+        <label for="judul">Judul:</label>
+        <input type="text" id="judul" name="judul" required><br>
+        <label for="stok">Stok:</label>
+        <input type="number" id="stok" name="stok" required><br>
+        <button type="submit">Tambah Buku</button>
+    </form>
+    <button onclick="window.location.href='mahasiswa.html'">Lihat Data Peminjaman</button>
+    <h2>Daftar Buku</h2>
+    <table id="bukuTable">
+        <thead>
+            <tr>
+                <th>Kode Buku</th>
+                <th>Judul</th>
+                <th>Stok</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data buku akan dimuat di sini -->
+        </tbody>
+    </table>
+
+</body>
+</html>

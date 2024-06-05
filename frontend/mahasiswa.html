@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Peminjaman</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="mahasiswa.js" defer></script>
+</head>
+<body>
+    <button onclick="window.location.href='home.html'">Kembali ke home</button>
+
+    <form id="addMahasiswaForm">
+        <h2>Tambah Data Peminjam</h2>
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" readonly><br>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br>
+        <label for="kode_buku">Kode Buku:</label>
+        <input type="text" id="kode_buku" name="kode_buku" required><br>
+        <button type="submit">Tambah Mahasiswa</button>
+        <p id="warningMessage" style="color: red;"></p>
+    </form>
+    <h2>Daftar Peminjam</h2>
+    <table id="mahasiswaTable" border="1">
+        <thead>
+            <tr>
+                <th>NIM</th>
+                <th>Nama</th>
+                <th>Kode Buku</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data Mahasiswa akan ditampilkan di sini -->
+        </tbody>
+    </table>
+</body>
+</html>

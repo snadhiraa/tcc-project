@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Buku</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="buku.js" defer></script>
+</head>
+<body>
+    <h1>Update Buku</h1>
+    <form id="updateBukuForm">
+        <label for="kode_buku">Kode Buku:</label>
+        <input type="text" id="kode_buku" name="kode_buku" readonly><br>
+        <label for="judul">Judul:</label>
+        <input type="text" id="judul" name="judul" required><br>
+        <label for="stok">Stok:</label>
+        <input type="number" id="stok" name="stok" required><br>
+        <button type="submit">Update Buku</button>
+    </form>
+</body>
+</html>
